@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de contacto</title>
+  </head>
+  <body>
+    <section>
+      <div>
+        <form action="">
+          <p>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" />
+          </p>
+          <p>
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellido" />
+          </p>
+          <p>
+            <label for="email">Correo Electrónico</label>
+            <input type="email" name="email" required />
+          </p>
+          <p>
+            <label for="msg">Mensaje</label>
+            <textarea name="msg" id="" cols="30" rows="10"></textarea>
+          </p>
+          <p>
+            <input type="submit" value="Enviar" />
+            <input type="reset" value="Borrar" />
+          </p>
+        </form>
+      </div>
+    </section>
+    <a href="index.html">Volver al inicio</a>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column wrap;
+        height: 100vh;
+      }
+      div {
+        padding: 10px;
+        border: 3px solid #9d9d9d;
+      }
+      p {
+        display: flex;
+        flex-flow: column wrap;
+      }
+
+      input,
+      textarea {
+        margin-bottom: 10px;
+      }
+
+      input[type="submit"],
+      input[type="reset"] {
+        padding: 5px;
+      }
+
+      a {
+        margin-top: 20px;
+      }
+    </style>
+  </body>
+</html>
