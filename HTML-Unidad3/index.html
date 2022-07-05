@@ -5,34 +5,68 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Curriculum Vitae</title>
   </head>
 
   <body>
     <!--CONTENEDOR-->
-    <section>
-      <div>
-        <h1>NOMBRE Y APELLIDO</h1>
-        <p>Facundo Cordoba</p>
-      </div>
+    <section id="contenedor">
+      <div class="info-personal">
+        <div class="head info-personal__box">
+          <div id="nombre">
+            <h1>Facundo Cordoba</h1>
+          </div>
 
-      <div>
-        <img src="perfil.jpg" alt="foto de perfil" width="400px" />
-      </div>
+          <div class="img">
+            <img src="perfil.jpg" alt="foto de perfil" />
+          </div>
+        </div>
+        <!--PERFIL-->
 
-      <div>
-        <div>
-          <h2>Edad </h2>
-          <p></p>22</p>
+        <div class="perfil info-personal__box">
+          <h4>Perfil</h4>
+          <p>
+            Soy personal militar y desarrollador en C# asp.net en la Armada
+            Argentina, amo mi trabajo. Autodidacta, proactivo, responsable y
+            compañero.
+          </p>
+          <br />
+          <p>
+            Me encanta entrenar y hacer deporte, especificamente boxeo, salir a
+            correr y futbol. No puedo hacer nada sin música, me acompaña a todos
+            lados.
+          </p>
+          <p>No me gusta dormir siesta.</p>
         </div>
 
-        <div>
-          <h2>Domicilio</h2>
-          <p>Ezpeleta, Buenos Aires</p>
+        <div class="info-personal__box">
+          <h4>Datos personales</h4>
+          <p>Edad: 22 años</p>
+          <p>Direccion: Ezpeleta, Buenos Aires</p>
+          <p>E-mail: facordoba02@gmail.com</p>
+          <p>Telefóno: +54 9 1100000000</p>
         </div>
 
+        <div class="redes info-personal__box">
+          <h4>Redes Sociales</h4>
+          <div class="links">
+            <a href="#">Twitter</a>
+            <a href="#">Facebook</a>
+            <a href="#">Github</a>
+            <a href="#">Instagram</a>
+          </div>
+        </div>
+      </div>
+
+      <!--PERFIL-->
+
+      <div class="intereses">
+        <div class="intereses__box">
+          <h2>Intereses</h2>
+        </div>
         <!--SERIES-->
-        <div>
+        <div class="intereses__box">
           <h3>Que series me gustan?</h3>
           <ul>
             <li>Breaking Bad</li>
@@ -45,7 +79,7 @@
         <!--SERIES-->
 
         <!--PELIS-->
-        <div>
+        <div class="intereses__box">
           <h3>Que peliculas me gustan?</h3>
           <ul>
             <li>Capitan Phillips</li>
@@ -56,33 +90,17 @@
           </ul>
         </div>
         <!--PELIS-->
-
-        <!--PERFIL-->
-        <div>
-          <h3>Perfil</h3>
-          <p>
-            Soy personal militar y desarrollador en C# asp.net en la Armada
-            Argentina, amo mi trabajo. Autodidacta, proactivo, responsable y
-            compañero.
-          </p>
-          <p>
-            Intereses: me encanta entrenar y hacer deporte, especificamente
-            boxeo, salir a correr y futbol. No puedo hacer nada sin música, me
-            acompaña a todos lados.
-          </p>
-          <p>No me gusta dormir siesta.</p>
-        </div>
-        <!--PERFIL-->
-        <br>
-        <div>
+        <div class="intereses__box">
           <p>
             <strong
               >Si queres contactarme podes completar el siguiente
-              <a href="formulario.html">formulario</a></strong
+              <a class="link" href="formulario.html">formulario</a></strong
             >
           </p>
         </div>
       </div>
+
+      <br />
     </section>
   </body>
 </html>
