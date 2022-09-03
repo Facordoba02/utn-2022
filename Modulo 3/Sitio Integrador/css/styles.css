@@ -256,6 +256,15 @@ textarea {
   color: white;
 }
 
+#footer {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  padding: 20px;
+  color: #fdc41f;
+  font-size: 0.9em;
+  background-color: #131313;
+}
+
 @media (max-width: 1560px) {
   .card {
     width: 300px;
